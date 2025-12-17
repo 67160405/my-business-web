@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header><h1>PEPSI STORE</h1></header>
+    <figure>
+      <img src="images/Pepsi-Logo.png" alt="Pepsi Store" width="500" />
+      <figcaption>Pepsi Store</figcaption>
+      <!--Navigation menu-->
+    </figure>
+    <ul>
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="about.html">เกี่ยวกับ</a></li>
+      <li><a href="services.html">บริการ</a></li>
+      <li><a href="contact.html">ติดต่อ</a></li>
+    </ul>
+        <!--Contact Form-->
+    <header><h3>Contact Form</h3></header>
+    <form class="Contact-Form" action="" method="post"></form>
+    <fieldset style="width: 500px; height: 270px;"> 
+        <legend>ข้อมูลส่วนตัว</legend>
+        <label for="fname">ชื่อจริง:</label>
+        <input type="text" id="fname" name="firstname" required />
+        <label for="lname">นามสกุล:</label>
+        <input type="text" id="lname" name="lastname" required /><br />
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="born">วันเกิด:</label>
+        <input type="date" id="born_id" name="born" required />
+
+                <fieldset>
+          <legend>เพศ</legend>
+          <input type="radio" id="male" name="gender" />
+          <label for="male">ชาย</label>
+          <input type="radio" id="female" name="gender" />
+          <label for="female">หญิง</label>
+          <input type="radio" id="other" name="gender" />
+          <label for="other">อื่นๆ</label>
+        </fieldset>
+
+        <label for="country">ประเทศ:</label>
+        <select name="CT" id="country">
+          <option value="">--เลือกประเทศ--</option></select
+        ><br />
+
+        <label for="information">ข้อมูลเพิ่มเติม:</label><br />
+        <textarea
+          name="information"
+          id="info"
+          style="width: 400px; height: 80px"
+        ></textarea
+        ><br />
+
+        <input type="checkbox" id="accept" name="ยอมรับ" />
+        <label for="accept">ฉันยอมรับเงื่อนไขการใช้บริการ</label>
+      </fieldset>
+      <button type="submit">ส่งข้อมูล</button>
+      <button type="reset">ยกเลิก</button>
+    <p><h3>Google map</h3></p>
+        <img src="images/Map.png" alt="Google map" width="500px">
+        <p>Address: 700 Anderson Hill Rd, Purchase, NY 10577, USA</p>
+        <!--Contact in other Platform-->
+    <a href="https://www.pepsi.com/contact/"><img src="images/Pepsi-Logo.png" alt="Logo" width="100px"></a >
+    <figcaption>Contact Website Here</figcaption>
+        <!--Back to Pepsi Store-->
+    <ul>
+      <li><a href="index.html">ย้อนกลับ</a></li>
+    </ul>
+    <footer>© 2025 Pepsi Store. All Rights Reserved</footer>
+</body>
+</html>
