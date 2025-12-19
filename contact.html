@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
   </head>
   <body>
     <!--Header-->
-    <header><h1>PEPSI STORE</h1></header>
-    <figure>
-      <img src="images/Pepsi-Logo.png" alt="Pepsi Store" width="500" />
-      <figcaption>Pepsi Store</figcaption>
-      <!--Navigation menu-->
-    </figure>
-    <ul>
-      <li><a href="index.html">หน้าแรก</a></li>
-      <li><a href="about.html">เกี่ยวกับ</a></li>
-      <li><a href="services.html">บริการ</a></li>
-      <li><a href="contact.html">ติดต่อ</a></li>
-    </ul>
-        <!--Contact Form-->
-    <header><h3>Contact Form</h3></header>
-    <form class="Contact-Form" action="" method="post"></form>
-    <fieldset style="width: 500px; height: 270px;"> 
-        <legend>ข้อมูลส่วนตัว</legend>
-        <label for="fname">ชื่อจริง:</label>
+    <header id="header">
+      <h1>PEPSI STORE</h1>
+      <figure>
+        <img src="images/Pepsi-Logo.png" alt="Pepsi Store" class="logo" />
+      </figure>
+    </header>
+    <!--Navigation menu-->
+    <nav>
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="about.html">เกี่ยวกับ</a></li>
+        <li><a href="services.html">บริการ</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+      </ul>
+    </nav>
+    <!--Contact Form-->
+    <h4>Contact Form</h4>
+
+  <section class="card contact-card">
+    <form class="contact-form" action="" method="post">
+      <h6>ข้อมูลส่วนตัว</h6>
+
+      <div class="form1">
+        <label for="fname">ชื่อจริง</label>
         <input type="text" id="fname" name="firstname" required />
-        <label for="lname">นามสกุล:</label>
-        <input type="text" id="lname" name="lastname" required /><br />
-        <label for="email">อีเมล:</label>
+        <label for="lname">นามสกุล</label>
+        <input type="text" id="lname" name="lastname" required />
+      </div>
+
+      <div class="form2">
+        <label for="email">อีเมล</label>
         <input type="email" id="email" name="email" required />
-        <label for="born">วันเกิด:</label>
+        <label for="born_id">วันเกิด</label>
         <input type="date" id="born_id" name="born" required />
+      </div>
 
-                <fieldset>
-          <legend>เพศ</legend>
-          <input type="radio" id="male" name="gender" />
-          <label for="male">ชาย</label>
-          <input type="radio" id="female" name="gender" />
-          <label for="female">หญิง</label>
-          <input type="radio" id="other" name="gender" />
-          <label for="other">อื่นๆ</label>
-        </fieldset>
+      <div class="form3">
+        <label for="country">ประเทศ</label>
+        <select id="country">
+          <option>--เลือกประเทศ--</option>
+        </select>
+      </div>
 
-        <label for="country">ประเทศ:</label>
-        <select name="CT" id="country">
-          <option value="">--เลือกประเทศ--</option></select
-        ><br />
+      <div class="form4">
+        <h6>ข้อมูลเพิ่มเติม</h6>
+        <textarea id="info"></textarea>
+      </div>
 
-        <label for="information">ข้อมูลเพิ่มเติม:</label><br />
-        <textarea
-          name="information"
-          id="info"
-          style="width: 400px; height: 80px"
-        ></textarea
-        ><br />
+      <div class="form5">
+        <input type="checkbox" id="accept" />
+        <label for="accept">ฉันยอมรับเงื่อนไขการใช้บริการ</label></br>
+        <button type="submit">ส่งข้อมูล</button>
+        <button type="reset">ยกเลิก</button>
+      </div>
+    </form>
+  </section>
 
-        <input type="checkbox" id="accept" name="ยอมรับ" />
-        <label for="accept">ฉันยอมรับเงื่อนไขการใช้บริการ</label>
-      </fieldset>
-      <button type="submit">ส่งข้อมูล</button>
-      <button type="reset">ยกเลิก</button>
-    <p><h3>Google map</h3></p>
-        <img src="images/Map.png" alt="Google map" width="500px">
-        <p>Address: 700 Anderson Hill Rd, Purchase, NY 10577, USA</p>
-        <!--Contact in other Platform-->
-    <a href="https://www.pepsi.com/contact/"><img src="images/Pepsi-Logo.png" alt="Logo" width="100px"></a >
-    <figcaption>Contact Website Here</figcaption>
-        <!--Back to Pepsi Store-->
+    <h4>Google map</h4>
+    <figure class="card">
+      <img src="images/Map.png" alt="Google map" class="map" /></br>
+      <p2>Address: 700 Anderson Hill Rd, Purchase, NY 10577, USA</p2>
+    </figure>
+    <!--Contact in other Platform-->
+    <h4>Contact Website Here 
+    <a href="https://www.pepsi.com/contact/">
+      <img src="images/Pepsi-Logo.png" alt="Logo" class="logo2"/></a></h4>
+    <!--Back to Pepsi Store-->
+    <index-btn>
     <ul>
-      <li><a href="index.html">ย้อนกลับ</a></li>
+      <li><a class ="a2" href="index.html">ย้อนกลับ</a></li>
     </ul>
-    <footer>© 2025 Pepsi Store. All Rights Reserved</footer>
-</body>
+    </index-btn>
+    <footer id="footer2"><h5>© 2025 Pepsi Store. All Rights Reserved</h5></footer>
+  </body>
 </html>

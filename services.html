@@ -1,87 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
   </head>
   <body>
     <!--Header-->
-    <header><h1>PEPSI STORE</h1></header>
-    <figure>
-      <img src="images/Pepsi-Logo.png" alt="Pepsi Store" width="500" />
-      <figcaption>Pepsi Store</figcaption>
-      <!--Navigation menu-->
-    </figure>
-    <ul>
-      <li><a href="index.html">หน้าแรก</a></li>
-      <li><a href="about.html">เกี่ยวกับ</a></li>
-      <li><a href="services.html">บริการ</a></li>
-      <li><a href="contact.html">ติดต่อ</a></li>
-    </ul>
+    <header id="header">
+      <h1>PEPSI STORE</h1>
+      <figure>
+        <img src="images/Pepsi-Logo.png" alt="Pepsi Store" class="logo" />
+      </figure>
+    </header>
+    <!--Navigation menu-->
+    <nav>
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="about.html">เกี่ยวกับ</a></li>
+        <li><a href="services.html">บริการ</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+      </ul>
+    </nav>
     <!--Service System-->
-    <header><h1>บริการ</h1></header>
-    <section class="ค้นหาบริการ">
-      <h3>ค้นหาบริการ</h3>
-      <!--Search System-->
-      <textarea name="Search" id="Search"></textarea><br />>
-      <button type="submit">ค้นหา</button>
+    <header><h4>Services</h4></header>
+    <!--Search System-->
+    <section class="card">
+      <div class="service">
+        <h3>ค้นหาบริการ</h3>
+        <input type="text" placeholder="พิมพ์ชื่อบริการ..." />
+        <button type="submit" class="btn">ค้นหา</button>
+        <!--Category System-->
+        <h3>หมวดหมู่การบริการ</h3>
+        <label for="หมวดหมู่การบริการ"></label>
+        <select name="Category" class="categoty">
+          <option value="">-หมวดหมู่การบริการ-</option>
+          <option value="">ปัญหาที่พบบ่อย</option>
+          <option value="">กิจกรรมแจกรางวัล</option>
+          <option value="">การขนส่งสินค้า</option>
+        </select>
+      </div>
     </section>
-    <section class="หมวดหมู่การบริการ">
-      <h3>หมวดหมู่การบริการ</h3>
-            <!--Category System-->
-      <label for="หมวดหมู่การบริการ"></label>
-      <select name="Category" id="หมวดหมู่การบริการ">
-        <option value="">-หมวดหมู่การบริการ-</option>
-        <option value="">ปัญหาที่พบบ่อย</option>
-        <option value="">กิจกรรมแจกรางวัล</option>
-        <option value="">การขนส่งสินค้า</option>
-      </select>
-          <section class="บริการและโปรโมชั่น">
-      <fieldset>
-        <legend><h3>บริการและโปรโมชั่น</h3></legend>
-        <!--Service and Promotion System-->
-        <input type="checkbox" id="ส่งถึงบ้าน" name="บริการและโปรโมชั่น" />
-        <label for="ส่งถึงบ้าน">ส่งถึงบ้าน</label>
-        <input
-          type="checkbox"
-          id="ดีลพิเศษ"
-          name="บริการและโปรโมชั่น"
-        />
-        <label for="ดีลพิเศษ">ดีลพิเศษ</label>
-        <input type="checkbox" id="สะสมแต้มแลกรางวัล" name="บริการและโปรโมชั่น" />
-        <label for="สะสมแต้มแลกรางวัล">สะสมแต้มแลกรางวัล</label>
-      </fieldset>
-    </section>
-    <!--Promotion Table-->
-    <table border="1" class="แพ็กเกจโปรโมชั่น">
-      <tr>
-        <td><label for="ส่งฟรี">ส่งฟรี</label></td>
-        <td><label for="ข้อมูลโปรโมชั่น">ส่งฟรีทั่วไทย</label></td>
-      </tr>
-      <tr>
-        <td><label for="Pepsi Sale">Pepsi Sale</label></td>
-        <td>
-          <label for="ข้อมูลโปรโมชั่น"
-            >ดีลพิเศษซื้อ Pepsi ชนิดเดียวกัน 3 ขวดขึ้นไป ลดสูงสุด 20% </label
-          >
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label for="แลกซื้อ">แลกซื้อ</label>
-        </td>
-        <td>
-          <label for="ข้อมูลโปรโมชั่น">
-            ซื้อสินค้าครบที่กำหนัดสามารถแลกซื้อของสุดพิเศษได้
-            </label>
-        </td>
-      </tr>
-    </table>
-        <!--Back to Pepsi Store-->
-    <ul>
-      <li><a href="index.html">ย้อนกลับ</a></li>
-    </ul>
-    <footer>© 2025 Pepsi Store. All Rights Reserved</footer>
+    <fieldset>
+      <!--Promotion Table-->
+      <h4>Promotion</h4>
+      <section class="card promotion">
+        <input type="radio" name="promo" id="free" />
+        <label for="free">การขนส่งสินค้า</label>
+        <input type="radio" name="promo" id="deal" />
+        <label for="deal">ดีลพิเศษ</label>
+        <input type="radio" name="promo" id="point" />
+        <label for="point">สะสมแต้มแลกรางวัล</label>
+        <div class="promo-text free-text">
+          ส่งฟรีภายใน 24 ชั่วโมงในเขตกรุงเทพฯและปริมณฑล
+        </div>
+        <div class="promo-text free-text">
+          ส่งฟรีทั่วไทยเมื่อสั่งครบ 299 บาท
+        </div>
+        <div class="promo-text deal-text">
+          ดีลพิเศษซื้อ Pepsi ชนิดเดียวกัน 3 ขวดขึ้นไป ลดสูงสุด 20%
+        </div>
+        <div class="promo-text deal-text">
+          ซื้อครบ 6 ขวด แถม Pepsi 1 ขวด ฟรี
+        </div>
+        <div class="promo-text point-text">
+          ซื้อสินค้าครบที่กำหนัดสามารถแลกซื้อของสุดพิเศษได้
+        </div>
+        <div class="promo-text point-text">
+          แต้มสะสมใช้แลกส่วนลดในการสั่งซื้อครั้งถัดไปได้
+        </div>
+      </section>
+    </fieldset>
+    <!--Back to Pepsi Store-->
+    <index-btn>
+      <ul>
+        <li><a href="index.html" class="a2">ย้อนกลับ</a></li>
+      </ul>
+    </index-btn>
+    <footer id="footer2">
+      <h5>© 2025 Pepsi Store. All Rights Reserved</h5>
+    </footer>
   </body>
 </html>
